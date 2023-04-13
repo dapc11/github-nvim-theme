@@ -688,7 +688,7 @@ M.setup = function()
     FidgetTask = { fg = c.fg, bg = nil },
   }
 
-  if config.options.hide_inactive_statusline then
+  if config.options.hide_nc_statusline then
     local inactive = { fg = c.bg, bg = c.bg, sp = c.bg_visual, style = Styles.Underline }
     hi.base.StatusLineNC = inactive
     hi.plugins.MiniStatuslineInactive = inactive
